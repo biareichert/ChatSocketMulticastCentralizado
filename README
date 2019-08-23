@@ -1,0 +1,22 @@
+------ Dicas ------
+
+O programa não aceita nomes de clientes repetidos.
+Para o cliente sair do programa digite /quit.
+
+------ Passo a Passo ------
+
+1- No terminal 1 lance o servidor;
+  $make ChatServer numPorta
+
+2- No terminal 2 lance um cliente;
+  $make ChatClient host numPorta
+
+3- No terminal 3 lance um cliente;
+  $make ChatClient host numPorta
+
+------ Observações ------
+
+Onde indica "numPorta" você deve escrever o número da porta desejada.
+Onde indica "host" você deve escrever o host do servidor, por exemplo, localhost.
+Não tratei a parte da fragmentação UDP, consequentemente, arquivos grandes darão problema.
+Os arquivos gerados no final são diferentes, não passam no teste do diff.
